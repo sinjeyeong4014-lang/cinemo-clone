@@ -1,117 +1,134 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #101113;
-  color: #f3f1ed;
-  font-family: "Noto Sans KR", sans-serif;
+h3 {
 }
-.header {
-  width: 100%;
-  height: 88px;
-  padding: 0 64px;
-  background-color: #101113;
+.Content-collection {
+  padding-bottom: 48px;
+  height: auto;
+}
 
+.Collection-introduction {
+  padding-bottom: 20px;
+}
+
+.Section-heading {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 8px;
 }
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+
+.Collection-description {
+  padding-left: 64px;
+  padding-right: 64px;
+  justify-content: flex-start;
+  font-size: 12px;
+  color: #acaeb3;
+  font-family: "Noto Sans KR";
+  font-weight: regular;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+
+.Collection-description > p {
+  margin: 0;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-.nav a {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
-  color: #acaeb3;
-  white-space: nowrap;
-}
-.nav a.active,
-.nav a:hover {
-  font-weight: 700;
-  color: #f3f1ed;
-}
-.mypage {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
-}
-.mypage .avatar {
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-}
-.mypage span {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
-  color: #f3f1ed;
-}
-.main {
-  display: none;
-}
-.footer {
-  width: 100%;
-  max-width: 100%;
-  height: 166px;
-  flex-shrink: 0;
-  background-color: #111214;
-  border-top: 1px solid #333333;
-  padding: 40px 64px;
-}
-.footer-inner {
-  width: 100%;
-  height: 166px;
-  padding: 30px 48px;
-  box-sizing: border-box;
-}
-.footer-nav {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 18px;
-}
-.footer-nav a {
+.section-note {
+  align-self: center;
+  color: #7e8289;
   font-size: 12px;
-  font-weight: 400;
-  color: #7e8289;
+  font-family: "Noto Sans KR";
 }
-.footer-description {
+
+.title {
+  color: #f3f1ed;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Noto Sans KR";
+  text-align: left;
+  margin: 0;
+}
+h3 {
+  font-size: 16px;
+  color: #f3f1ed;
+  font-weight: Medium;
+}
+
+.Horizontal-scroll-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  padding-left: 64px;
+  padding-right: 64px;
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 1.8;
-  color: #7e8289;
-  margin-bottom: 18px;
 }
-.footer-copy {
-  font-family: "Inter", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1;
-  color: #7e8289;
+.Horizontal-scroll-content article {
+  flex: 1;
+}
+
+.content-card-1 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Content-details {
+  padding-top: 12px;
+  margin: 0;
+}
+
+.content-card-2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-card-3 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-card-4 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figcaption > p {
+  color: #acaeb3;
+  font-size: 11px;
+  font-family: "Noto Sans KR";
+}
+
+.content-card-11 {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+}
+
+.content-card-22 {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+.content-card-33 {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-card-44 {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
 }
