@@ -3,50 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CINEMO ｜ HOME</title>
+    <title>Cinemo - My Page</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-left">
-        <h1 class="logo">
-          <img src="./assets/Brand mark.svg" alt="CINEMO 로고" />
-          <span class="logo-text">CINEMO</span>
-        </h1>
-        <nav class="nav" aria-label="주 메뉴">
-          <a href="./index.html" class="active">홈</a>
-          <a href="#">영화</a>
-          <a href="#">시리즈</a>
-          <a href="#">내가 찜한 콘텐츠</a>
-        </nav>
-      </div>
-      <a href="./mypage.html" class="mypage">
-        <img src="./assets/y-.svg" alt="" class="avatar" />
-        <span>욜로의 마이페이지</span>
-      </a>
-    </header>
-    <main>
-      <!-- 메인 콘텐츠가 들어갈 자리 -->
-      <!-- 오늘, 새로운 세계로 영화 목록 -->
-      <!-- 밤이 깊어질 때 영화 목록 -->
-    </main>
-    <footer class="footer">
-      <div class="foot-inner">
-        <nav class="footer-nav" aria lavbel="하단 메뉴">
-          <a href="#">서비스 소개</a>
-          <a href="#">이용약관</a>
-          <a href="#">개인정보 처리방침</a>
-          <a href="#">고객센터</a>
-        </nav>
-        <p class="footer-description">
-          CINEMO는 학습을 위한 가상의 OTT 서비스입니다. 콘텐츠와 인물은
-          모두허구이며 실제 결제·지원을 제공하지 않습니다.
-        </p>
-        <p class="footer-copy">
-          &copy; 2026 CINOMO. A FICTIONAL STREAMING PROJECT.
-        </p>
-      </div>
-    </footer>
+    <header></header>
+    <div class="Content-collection">
+      <article class="Collection-introduction">
+        <header class="Section-heading">
+          <h2 class="title">내가 찜한 콘텐츠</h2>
+          <p class="section-note">4편</p>
+        </header>
+      </article>
+      <section class="Horizontal-scroll-content">
+        <article>
+          <figure class="content-card-11">
+            <img src="./assets/Image quiet-orbit.png" />
+            <img src="./assets/Saved marker.svg" class="checkbox" />
+            <figcaption class="Content-details">
+              <h3>고요의 궤도</h3>
+              <p>SF · 미스터리 · 15+</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure class="content-card-22">
+            <img src="./assets/Image blue-hour.png" />
+            <img src="./assets/Saved marker.svg" class="checkbox" />
+            <figcaption class="Content-details">
+              <h3>파란 시간</h3>
+              <p>로맨스 · 드라마 · 12+</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure class="content-card-33">
+            <img src="./assets/Image forest-letter.png" />
+            <img src="./assets/Saved marker.svg" class="checkbox" />
+            <figcaption class="Content-details">
+              <h3>숲에서 온 편지</h3>
+              <p>판타지 · 드라마 · 전체</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure class="content-card-44">
+            <img src="./assets/Image night-diver.png" />
+            <img src="./assets/Saved marker.svg" class="checkbox" />
+            <figcaption class="Content-details">
+              <h3>밤의 잠수부</h3>
+              <p>스릴러 · 미스터리 · 15+</p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    <footer></footer>
   </body>
 </html>
