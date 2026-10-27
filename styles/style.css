@@ -32,14 +32,6 @@ body {
   gap: 12px;
 }
 
-.logo-text {
-  font-family: "inter", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  color: #f3f1ed;
-}
-
 .nav {
   display: flex;
   align-items: center;
