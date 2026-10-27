@@ -6,20 +6,122 @@
 
 body {
   min-height: 100vh;
-  background-color: #101113;
-  padding: 116px 64px 120px 65px;
-  width: 1440px;
-  height: 724px;
-  gap: 56px;
-}
-
-.scene {
   display: flex;
   flex-direction: column;
   background-color: #101113;
   color: #f3f1ed;
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.scene {
+  display: flex;
+  flex-direction: column;
+  aling-items: center;
+  background-color: #101113;
+  color: #f3f1ed;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.scene-description {
+  font-family: "inter", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: #f28d77;
+}
+.scene-title {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #f3f1ed;
+}
+.scene-subtitle {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 180%;
+  text-align: center;
+  color: #acaeb3;
+}
+
+.profile-box {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 728px;
+  height: 209px;
+  gap: 40px;
+  margin: 56px auto;
+}
+.img-con {
+  position: relative;
+  display: inline-block;
+}
+
+.yy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 72.96px;
+  line-height: 100%;
+  color: #f3f1ed;
+}
+
+.yolo {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #f3f1ed;
+  margin-top: 16px;
+}
+
+.note {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 100%;
+  text-align: center;
+  color: #acaeb3;
+  margin-top: 12px;
+}
+
+.profile-manage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 48px;
+  border: 1px solid #303237;
+  padding: 22px 0px;
+  gap: 8px;
+  margin: 56px auto 0;
+}
+.profile-settings {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #f3f1ed;
+  gap: 8px;
+  margin-right: 8px;
+}
+
 .header {
   width: 100%;
   height: 88px;
@@ -477,6 +579,9 @@ h3 {
   font-weight: 400;
   font-size: 11px;
   font-family: "Noto Sans KR";
+  color: #7e8289;
+  text-align: center;
+  line-height: 100%;
 }
 
 .content-card-11 {
