@@ -1,3 +1,392 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #101113;
+  color: #f3f1ed;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 88px;
+  padding: 0 64px;
+  background-color: #101113;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #f3f1ed;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #acaeb3;
+  white-space: nowrap;
+}
+.nav a.active,
+.nav a:hover {
+  font-weight: 700;
+  color: #f3f1ed;
+}
+.mypage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.mypage .avatar {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+.mypage span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #f3f1ed;
+}
+.main {
+  display: none;
+}
+.footer {
+  width: 100%;
+  max-width: 100%;
+  height: 166px;
+  flex-shrink: 0;
+  background-color: #111214;
+  border-top: 1px solid #333333;
+  padding: 40px 64px;
+}
+.footer-inner {
+  width: 100%;
+  height: 166px;
+  padding: 30px 48px;
+  box-sizing: border-box;
+}
+.footer-nav {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 18px;
+}
+.footer-nav a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7e8289;
+}
+.footer-description {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #7e8289;
+  margin-bottom: 18px;
+}
+.footer-copy {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  color: #7e8289;
+}
+.hero-banner {
+    background-image: linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),  
+    linear-gradient(to right, rgba(16, 17, 19, 0.96), rgba(16, 17, 19, 0.66), rgba(16, 17, 19, 0)),  
+    url(../assets/Hero\ quiet-orbit.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: space-around;
+}
+
+.hero-story {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    gap: 24px;
+    padding-top: 104px;
+    padding-bottom: 156px;
+}
+
+.hero-discovery {
+    display: flex;
+    align-items:flex-end;
+    gap: 12px;
+}
+
+.discovery-text {
+    color: #F28D77;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+}
+
+.discovery-text::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #F28D77;
+    margin-right:12px;
+    margin-bottom: 4px;
+}
+
+.discovery-vol {
+    color: #ACAEB3;
+    font-family: "inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.hero-title {
+    display:flex;
+    flex-direction:column;
+    gap: 8px;
+    color: #F3F1ED;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.title-ko {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.title-en {
+    color: #ACAEB3;
+    font-family: "inter", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.hero-Genre {
+    display:flex;
+    gap: 12px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #ACAEB3;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.genre-year::after {
+    display:inline-block;
+    content:"·";
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    
+}
+
+.genre-type::after {
+    display:inline-block;
+    content:"·";
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+   
+}
+
+.genre-age {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: "inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.hero-summary {
+    color: #D2D3D5;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 185%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.plus-button {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    background-color: #232529;
+    padding: 0 22px;
+    gap: 8px;
+    height: 48px;
+    border-radius: 4px;
+}
+.plus-button:hover {
+    cursor: pointer;
+    background: #a2b8dc;
+}
+
+.plus-button:focus {
+   outline: 2px solid #a2b8dc;
+}
+
+.work-button {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    background-color: #F28D77;
+    color: #241512;
+    padding: 0 22px;
+    gap: 8px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.work-button:hover {
+    cursor: pointer;
+    background: #a2b8dc;
+}
+
+.work-button:focus {
+   outline: 2px solid #a2b8dc;
+}
+:focus-visible {
+    outline: 2px solid #a2b8dc;
+}
+.hero-buttons span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.icon-arrow {
+    object-fit: contain;
+}
+
+.button-text {
+    color: #F3F1ED;
+}
+.hero-aside {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding-bottom: 72px;
+    padding-right: 64px;
+    gap: 8px;
+}
+
+.aside-ko {
+    color: #F3F1ED;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.aside-en {
+    color: #ACAEB3;
+    font-family: "inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+/* 기본: Desktop (1024px 이상) */
+
+/* Tablet */
+@media (max-width: 1023px) {
+    .hero-banner {
+        padding-left:24px;
+    }
+
+    .hero-story {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .title-ko {
+        font-size: 48px;
+    }
+
+    .hero-summary {
+        font-size: 14px;
+    }
+
+    .hero-aside {
+        display: flex;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .hero-banner {
+        background-image: linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
+        url(../assets/Hero\ quiet-orbit.png);
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position:70% top;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        min-height: 0;
+    }
+    .hero-story {
+        box-sizing:border-box;
+        width:100%;
+        padding-top:260px;
+        padding-bottom: 36px;
+        padding-right: 24px;
+        gap: 20px;
+    }
+    .title-ko {
+        font-size: 40px;
+    }
+    .hero-summary {
+        font-size: 14px;
+    }
+    .hero-aside {
+        display:none;
+    }
+}
 * {
   box-sizing: border-box;
 }
@@ -132,3 +521,4 @@ figcaption > p {
   margin-left: 0;
   margin-right: 0;
 }
+  
