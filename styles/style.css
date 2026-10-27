@@ -1,13 +1,10 @@
-body {
+* {
   margin: 0;
-  background-color: #101113;
-  padding: 116px 64px 120px 65px;
-  width: 1440px;
-  height: 724px;
-  gap: 56px;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.scene {
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,10 +126,4 @@ body {
   line-height: 100%;
   text-align: center;
   color: #7e8289;
-}
-
-@media (max-width: 1023px) {
-}
-
-@media (max-width: 767px) {
 }
