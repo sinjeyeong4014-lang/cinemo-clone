@@ -1,7 +1,7 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   min-height: 100vh;
@@ -130,7 +130,8 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 64px;
 }
 
 .hero-story {
@@ -387,11 +388,7 @@ body {
         display:none;
     }
 }
-* {
-  box-sizing: border-box;
-}
-h3 {
-}
+
 .Content-collection {
   padding-bottom: 48px;
   height: auto;
@@ -423,8 +420,6 @@ h3 {
 .Collection-description > p {
   margin: 0;
 }
-
-.nav {
 .section-note {
   align-self: center;
   color: #7e8289;
@@ -521,4 +516,3 @@ figcaption > p {
   margin-left: 0;
   margin-right: 0;
 }
-  
