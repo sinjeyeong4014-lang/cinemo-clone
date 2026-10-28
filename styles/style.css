@@ -607,7 +607,203 @@ h3 {
 .content-card-33 {
   position: relative;
   margin-left: 0;
-  margin-right: 0;
+}
+
+.sub-title {
+  color: #f28d77;
+  font-size: 11px;
+}
+.mypage {
+  color: #f3f1ed;
+  font-size: 40px;
+  font-weight: 700;
+}
+.description {
+  color: #acaeb3;
+  font-size: 15px;
+}
+.mainpage {
+  display: flex;
+  flex-direction: column;
+}
+.mypage-profile {
+  border: 1px solid #1a1c1f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1312px;
+  height: 152px;
+  opacity: 1;
+  border-radius: 4px;
+  gap: 28px;
+  background-color: #303237;
+  padding: 28px;
+  margin: 48px 0px 0px;
+}
+.button-profile {
+  border: 1px solid #303237;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  white-space: nowrap;
+  background-color: #1a1c1f;
+  width: 138px;
+  height: 48px;
+  padding-right: 22px;
+  padding-left: 22px;
+  gap: 8px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.profile-change {
+  font-size: 14px;
+  width: 68px;
+  height: 17px;
+  color: #f3f1ed;
+  opacity: 1;
+  font-family: Noto Sans KR;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.name {
+  color: #f3f1ed;
+  width: 52px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.profile-info {
+  width: 54px;
+  height: 13px;
+  opacity: 1;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  font-size: 11px;
+  color: #f28d77;
+  display: flex;
+  align-items: center;
+}
+
+.note {
+  height: 16px;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  font-size: 13px;
+  color: #acaeb3;
+}
+.calendar {
+  opacity: 1;
+  font-family: Noto Sans KR;
+  font-size: 11px;
+  color: #7e8289;
+}
+.mypage-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-y {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: #f3f1ed;
+  font-size: 42.24px;
+}
+.setting {
+  height: 29px;
+  font-size: 24px;
+  color: #f3f1ed;
+}
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid;
+}
+.profile-b-text {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.b-label {
+  width: 180px;
+  height: 17px;
+  font-size: 14px;
+  font-family: Noto Sans KR;
+  font-weight: 400px;
+  color: #acaeb3;
+}
+.mypage-2 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 56px 64px 65.5px;
+}
+.line {
+  color: #303237;
+}
+.b-password {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f3f1ed;
+  margin: 0px 24px;
+}
+.b-style {
+  font-size: 13px;
+  font-weight: 400;
+  color: #f28d77;
+}
+.title-b-logout {
+  font-size: 11px;
+  font-weight: 400;
+  color: #7e8289;
+}
+.text-logout {
+  font-size: 13px;
+  font-weight: 400;
+  color: #acaeb3;
+}
+.title-logout {
+  display: flex;
+  justify-content: space-between;
+}
+.title-email {
+  grid-template-columns: 100px 1fr auto;
+  display: grid;
+}
+.title-password {
+  grid-template-columns: 100px 1fr auto;
+  display: grid;
+}
+.title-membership {
+  grid-template-columns: 100px 1fr auto;
+  display: grid;
+}
+.title-language {
+  grid-template-columns: 100px 1fr auto;
+  display: grid;
+}
+.title-setting {
+  margin: 48px 0px 0px;
 }
 
 .content-card-44 {
