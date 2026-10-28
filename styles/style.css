@@ -631,7 +631,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1312px;
+
   height: 152px;
   opacity: 1;
   border-radius: 4px;
@@ -694,6 +694,7 @@ h3 {
   font-weight: 400;
   font-size: 13px;
   color: #acaeb3;
+  text-align: left;
 }
 .calendar {
   opacity: 1;
@@ -712,7 +713,7 @@ h3 {
 .profile-img {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -755,7 +756,7 @@ hr {
 .mypage-2 {
   width: 100%;
   margin: 0 auto;
-  max-width: 1440px;
+
   padding: 56px 64px 65.5px;
 }
 .line {
@@ -810,4 +811,9 @@ hr {
   position: relative;
   margin-left: 0;
   margin-right: 0;
+}
+
+.page-setting {
+  padding-left: 64px;
+  padding-right: 64px;
 }
