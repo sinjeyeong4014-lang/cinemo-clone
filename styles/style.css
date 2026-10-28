@@ -123,11 +123,12 @@ body {
 }
 
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   height: 88px;
   padding: 0 64px;
   background-color: #101113;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,7 +196,8 @@ body {
 }
 .footer {
   width: 100%;
-  max-width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 166px;
   flex-shrink: 0;
   background-color: #111214;
@@ -205,7 +207,7 @@ body {
 .footer-inner {
   width: 100%;
   height: 166px;
-  padding: 30px 48px;
+  padding: 30px 0;
   box-sizing: border-box;
 }
 .footer-nav {
@@ -234,6 +236,11 @@ body {
   line-height: 1;
   color: #7e8289;
 }
+.page-main {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
 .hero-banner {
   background-image:
     linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
@@ -247,8 +254,8 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-between;
-  padding-left: 64px;
+  justify-content:space-between;
+  padding: 0 64px;
 }
 
 .hero-story {
@@ -373,6 +380,7 @@ body {
   gap: 8px;
   height: 48px;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 .plus-button:hover {
   cursor: pointer;
@@ -393,6 +401,7 @@ body {
   gap: 8px;
   height: 48px;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .work-button:hover {
@@ -426,7 +435,6 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 72px;
-  padding-right: 64px;
   gap: 8px;
 }
 
@@ -449,42 +457,92 @@ body {
 
 /* Tablet */
 @media (max-width: 1023px) {
-  .hero-banner {
-    padding-left: 24px;
-  }
 
-  .hero-story {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-
-  .title-ko {
-    font-size: 48px;
-  }
-
-  .hero-summary {
-    font-size: 14px;
-  }
-
-  .hero-aside {
-    display: flex;
-  }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    padding: 16px 24px;
+    background-color: #101113;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    min-width: 0;
+  }
+  .logo {
+    margin: 5px;
+  }
+  .logo svg {
+    display: block;
+    width: 113px;
+    height: 29px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+  }
+  .mypage .avatar {
+    display: block;
+    width: 32px;
+    height: 32px;
+    gap: 8px;
+  }
+  .mypage span {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    height: 170px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111214;
+    border-top: 1px solid #303237;
+  }
+  .footer-inner {
+    width: 100%;
+    height: 100%;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .footer-description {
+    margin-bottom: 0;
+  }
   .hero-banner {
     background-image:
       linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
-      url(../assets/Hero\ quiet-orbit.png);
-    background-size: cover;
+      url(../assets/Hero\ quiet-orbit\ \(1\).jpg);
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: 70% top;
+    background-position: center top;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 0;
+    padding: 0 24px;
   }
   .hero-story {
     box-sizing: border-box;
