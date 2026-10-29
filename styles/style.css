@@ -689,8 +689,6 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  height: 152px;
   opacity: 1;
   border-radius: 4px;
   gap: 28px;
@@ -706,7 +704,6 @@ h3 {
   margin-left: auto;
   white-space: nowrap;
   background-color: #1a1c1f;
-  width: 138px;
   height: 48px;
   padding-right: 22px;
   padding-left: 22px;
@@ -746,7 +743,7 @@ h3 {
   align-items: center;
 }
 
-.note {
+.note-2 {
   height: 16px;
   font-family: Noto Sans KR;
   font-weight: 400;
@@ -790,12 +787,9 @@ h3 {
   height: 29px;
   font-size: 24px;
   color: #f3f1ed;
+  margin: 0px 0px 24px;
 }
-hr {
-  margin: 24px 0;
-  border: none;
-  border-top: 1px solid;
-}
+
 .profile-b-text {
   display: flex;
   flex-direction: row;
@@ -830,6 +824,8 @@ hr {
   font-size: 13px;
   font-weight: 400;
   color: #f28d77;
+  cursor: pointer;
+  transition: 0.15s;
 }
 .title-b-logout {
   font-size: 11px;
@@ -840,29 +836,51 @@ hr {
   font-size: 13px;
   font-weight: 400;
   color: #acaeb3;
+  cursor: pointer;
+  transition: 0.15s;
 }
 .title-logout {
   display: flex;
   justify-content: space-between;
+  padding: 24px 0px;
 }
 .title-email {
   grid-template-columns: 100px 1fr auto;
   display: grid;
+  border-top: 1px solid #303237;
+  padding: 24px 0px;
+  border-top: 1px solid #303237;
 }
 .title-password {
   grid-template-columns: 100px 1fr auto;
   display: grid;
+  border-top: 1px solid #303237;
+  padding: 24px 0px;
 }
 .title-membership {
   grid-template-columns: 100px 1fr auto;
   display: grid;
+  border-top: 1px solid #303237;
+  padding: 24px 0px;
 }
 .title-language {
   grid-template-columns: 100px 1fr auto;
   display: grid;
+  border-top: 1px solid #303237;
+  padding: 24px 0px;
+  border-bottom: 1px solid #303237;
 }
 .title-setting {
   margin: 48px 0px 0px;
+}
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.button-more {
+  display: flex;
+  align-items: center;
 }
 
 .content-card-44 {
@@ -874,4 +892,78 @@ hr {
 .page-setting {
   padding-left: 64px;
   padding-right: 64px;
+}
+.calendar-2 {
+  display: none;
+}
+.mypage-bigmore {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.mypage-big-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+/* media */
+@media (min-width: 320px) and (max-width: 767px) {
+  .description {
+    display: flex;
+    width: 320px;
+  }
+  .title-email .title-language {
+    grid-template-columns: 1fr auto;
+  }
+  .title-password {
+    grid-template-columns: 1fr auto;
+  }
+  .title-membership {
+    grid-template-columns: 1fr auto;
+  }
+  .title-language {
+    grid-template-columns: 1fr auto;
+  }
+  .b-label {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .b-password {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    margin: 0px;
+  }
+
+  .b-style {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+  .calendar {
+    display: none;
+  }
+  .calendar-2 {
+    display: inline;
+    font-size: 11px;
+    color: #7e8289;
+  }
+  .mypage-big-porfile {
+    display: flex;
+    gap: 20px;
+  }
+  .mypage-bigmore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .button-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .profile-b-more {
+    display: none;
+  }
 }
