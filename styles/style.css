@@ -989,6 +989,11 @@ input[type="checkbox"]:checked + label {
   .logo {
     margin: 5px;
   }
+
+  .logo2 {
+    margin: 5px;
+    padding-top: 50px;
+  }
   .logo svg {
     display: block;
     width: 113px;
@@ -1201,5 +1206,11 @@ input[type="checkbox"]:checked + label {
 
   .note-book {
     display: none;
+  }
+  .mypage {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 13px;
   }
 }
