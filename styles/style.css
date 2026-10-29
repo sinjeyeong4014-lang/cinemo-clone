@@ -16,7 +16,7 @@ body {
 .scene {
   display: flex;
   flex-direction: column;
-  aling-items: center;
+  align-items: center;
   background-color: #101113;
   color: #f3f1ed;
   font-family: "Noto Sans KR", sans-serif;
@@ -123,11 +123,11 @@ body {
 }
 
 .header {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  width: 100%;
   height: 88px;
-  padding: 0 64px;
+  padding: 0 24px;
   background-color: #101113;
   display: flex;
   align-items: center;
@@ -195,20 +195,24 @@ body {
   display: none;
 }
 .footer {
+  margin: 0 auto;
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   height: 166px;
   flex-shrink: 0;
   background-color: #111214;
   border-top: 1px solid #333333;
-  padding: 40px 64px;
+  padding-top: 40px 24px;
 }
 .footer-inner {
   width: 100%;
   height: 166px;
-  padding: 30px 0;
+  padding: 30px 24px;
   box-sizing: border-box;
+}
+
+.second {
+  padding-bottom: 64px;
 }
 .footer-nav {
   display: flex;
@@ -254,8 +258,8 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
-  justify-content:space-between;
-  padding: 0 64px;
+  justify-content: space-between;
+  padding: 0 24px;
 }
 
 .hero-story {
@@ -457,7 +461,6 @@ body {
 
 /* Tablet */
 @media (max-width: 1023px) {
-
 }
 
 /* Mobile */
@@ -515,7 +518,7 @@ body {
   .footer-inner {
     width: 100%;
     height: 100%;
-    padding: 32px 24px;
+    padding: 32px 16px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -534,15 +537,15 @@ body {
     background-image:
       linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
       url(../assets/Hero\ quiet-orbit\ \(1\).jpg);
-    background-size:contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 100% top;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 0;
-    padding: 0 24px;
+    padding: 0 16px;
   }
   .hero-story {
     box-sizing: border-box;
@@ -561,39 +564,100 @@ body {
   .hero-aside {
     display: none;
   }
+  .Horizontal-scroll-content {
+    overflow-x: auto;
+    display: flex;
+  }
+  .content-card-1,
+  .content-card-2,
+  .content-card-3,
+  .content-card-4 {
+    flex: 0 0 70%;
+  }
+  .Content-details {
+    padding-bottom: 20px;
+  }
+
+  .section-note {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .Horizontal-scroll-content-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+}
+
+.Content-details {
+  margin-top: 12px;
 }
 
 .Content-collection {
-  padding-bottom: 48px;
   height: auto;
+  margin-top: 40px;
+}
+.Content-collection-2 {
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+.Content-collection-3 {
+  margin-top: 48px;
+  margin-bottom: 64px;
 }
 
 .Collection-introduction {
   padding-bottom: 20px;
+  padding: 0 24px;
 }
 
 .Section-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 64px;
-  padding-right: 64px;
   padding-bottom: 8px;
 }
 
+.Section-heading-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .Collection-description {
-  padding-left: 64px;
-  padding-right: 64px;
   justify-content: flex-start;
   font-size: 12px;
   color: #acaeb3;
   font-family: "Noto Sans KR";
-  font-weight: regular;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.Collection-description-2 {
+  justify-content: flex-start;
+  font-size: 12px;
+  color: #acaeb3;
+  font-family: "Noto Sans KR";
+  font-weight: normal;
+  padding: 0 24px;
+  padding-bottom: 20px;
 }
 
 .Collection-description > p {
   margin: 0;
 }
+
+.Collection-description-2 > p {
+  margin: 0;
+}
+
 .section-note {
   align-self: center;
   color: #7e8289;
@@ -622,12 +686,33 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   gap: 24px;
-  padding-left: 64px;
-  padding-right: 64px;
   width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
+.Horizontal-scroll-content-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .Horizontal-scroll-content article {
   flex: 1;
+  min-width: 0;
+}
+
+.Content-details p:nth-child(1) {
+  color: #f3f1ed;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.Content-details p:nth-child(2) {
+  font-size: 11px;
+  color: #acaeb3;
+  font-weight: regular;
 }
 
 .end {
@@ -808,8 +893,7 @@ h3 {
 .mypage-2 {
   width: 100%;
   margin: 0 auto;
-
-  padding: 56px 64px 65.5px;
+  max-width: 1440px;
 }
 .line {
   color: #303237;
@@ -893,77 +977,137 @@ h3 {
   padding-left: 64px;
   padding-right: 64px;
 }
-.calendar-2 {
-  display: none;
-}
-.mypage-bigmore {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.mypage-big-profile {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-/* media */
-@media (min-width: 320px) and (max-width: 767px) {
-  .description {
-    display: flex;
-    width: 320px;
-  }
-  .title-email .title-language {
-    grid-template-columns: 1fr auto;
-  }
-  .title-password {
-    grid-template-columns: 1fr auto;
-  }
-  .title-membership {
-    grid-template-columns: 1fr auto;
-  }
-  .title-language {
-    grid-template-columns: 1fr auto;
-  }
-  .b-label {
-    grid-column: 1;
-    grid-row: 1;
-  }
+/* 기본: Desktop (1024px 이상) */
 
-  .b-password {
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    margin: 0px;
-  }
+/* Tablet */
+@media (max-width: 1023px) {
+}
 
-  .b-style {
-    grid-column: 2;
-    grid-row: 1 / 3;
-  }
-  .calendar {
-    display: none;
-  }
-  .calendar-2 {
-    display: inline;
-    font-size: 11px;
-    color: #7e8289;
-  }
-  .mypage-big-porfile {
+/* Mobile */
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    padding: 16px 24px;
+    background-color: #101113;
+
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
   }
-  .mypage-bigmore {
+  .header-left {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: flex-start;
+    gap: 35px;
+    min-width: 0;
   }
-  .button-more {
+  .logo {
+    margin: 5px;
+  }
+  .logo svg {
+    display: block;
+    width: 113px;
+    height: 29px;
+  }
+  .nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    gap: 20px;
+    white-space: nowrap;
   }
-  .profile-b-more {
+  .mypage .avatar {
+    display: block;
+    width: 32px;
+    height: 32px;
+    gap: 8px;
+  }
+  .mypage span {
     display: none;
+  }
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    height: 170px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111214;
+    border-top: 1px solid #303237;
+  }
+  .footer-inner {
+    width: 100%;
+    height: 100%;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .footer-description {
+    margin-bottom: 0;
+  }
+  .hero-banner {
+    background-image:
+      linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
+      url(../assets/Hero\ quiet-orbit\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+    padding: 0 16px;
+  }
+  .hero-story {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 260px;
+    padding-bottom: 36px;
+    padding-right: 24px;
+    gap: 20px;
+  }
+  .title-ko {
+    font-size: 40px;
+  }
+  .hero-summary {
+    font-size: 14px;
+  }
+  .hero-aside {
+    display: none;
+  }
+  .Horizontal-scroll-content {
+    overflow-x: auto;
+    display: flex;
+  }
+  .content-card-1,
+  .content-card-2,
+  .content-card-3,
+  .content-card-4 {
+    flex: 0 0 70%;
+  }
+  .Content-details {
+    padding-bottom: 20px;
+  }
+
+  .section-note {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .Horizontal-scroll-content-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
   }
 }
