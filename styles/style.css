@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+.all-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0% auto;
+  padding-top: 116px;
+}
 
 body {
   min-height: 100vh;
@@ -16,10 +26,13 @@ body {
 .scene {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 16px;
   background-color: #101113;
   color: #f3f1ed;
   font-family: "Noto Sans KR", sans-serif;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .scene-description {
   font-family: "inter", sans-serif;
@@ -57,7 +70,7 @@ body {
   width: 728px;
   height: 209px;
   gap: 40px;
-  margin: 56px auto;
+  padding-top: 16px;
 }
 .img-con {
   position: relative;
@@ -78,6 +91,13 @@ body {
   color: #f3f1ed;
 }
 
+.teo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px 6px;
+}
+
 .yolo {
   font-family: "Noto Sans kR", sans-serif;
   font-style: medium;
@@ -86,18 +106,22 @@ body {
   line-height: 100%;
   text-align: center;
   color: #f3f1ed;
-  margin-top: 16px;
+  padding-top: 15px;
 }
-
-.note {
+.note-book {
   font-family: "Noto Sans kR", sans-serif;
   font-style: regular;
   font-weight: 400;
   font-size: 11px;
   line-height: 100%;
-  text-align: center;
   color: #acaeb3;
-  margin-top: 12px;
+  text-align: center;
+}
+
+.pencil-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
 }
 
 .profile-manage {
@@ -111,6 +135,16 @@ body {
   gap: 8px;
   margin: 56px auto 0;
 }
+.pencil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 48px;
+  border: 1px solid #303237;
+  padding: 22px 0px;
+  gap: 8px;
+}
 .profile-settings {
   font-family: "Noto Sans kR", sans-serif;
   font-style: bold;
@@ -119,20 +153,43 @@ body {
   line-height: 100%;
   color: #f3f1ed;
   gap: 8px;
-  margin-right: 8px;
+  text-align: center;
 }
-
+.end-end {
+  font-family: "Noto Sans kR", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Noto Sans KR";
+  color: #7e8289;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 120px;
+}
 .header {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   height: 88px;
-  padding: 0 24px;
   background-color: #101113;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
 }
+
+.header2 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 88px;
+  background-color: #101113;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
 .header-left {
   display: flex;
   align-items: center;
@@ -204,6 +261,7 @@ body {
   border-top: 1px solid #333333;
   padding-top: 40px 24px;
 }
+
 .footer-inner {
   width: 100%;
   height: 166px;
@@ -457,141 +515,6 @@ body {
   line-height: 100%;
 }
 
-/* 기본: Desktop (1024px 이상) */
-
-/* Tablet */
-@media (max-width: 1023px) {
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .header {
-    width: 100%;
-    height: 120px;
-    padding: 16px 24px;
-    background-color: #101113;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-sizing: border-box;
-  }
-  .header-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
-    min-width: 0;
-  }
-  .logo {
-    margin: 5px;
-  }
-  .logo svg {
-    display: block;
-    width: 113px;
-    height: 29px;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    white-space: nowrap;
-  }
-  .mypage .avatar {
-    display: block;
-    width: 32px;
-    height: 32px;
-    gap: 8px;
-  }
-  .mypage span {
-    display: none;
-  }
-  .footer {
-    width: 100%;
-    max-width: 100%;
-    height: 170px;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #111214;
-    border-top: 1px solid #303237;
-  }
-  .footer-inner {
-    width: 100%;
-    height: 100%;
-    padding: 32px 16px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    margin-bottom: 0;
-  }
-  .footer-description {
-    margin-bottom: 0;
-  }
-  .hero-banner {
-    background-image:
-      linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
-      url(../assets/Hero\ quiet-orbit\ \(1\).jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% top;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 0;
-    padding: 0 16px;
-  }
-  .hero-story {
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 260px;
-    padding-bottom: 36px;
-    padding-right: 24px;
-    gap: 20px;
-  }
-  .title-ko {
-    font-size: 40px;
-  }
-  .hero-summary {
-    font-size: 14px;
-  }
-  .hero-aside {
-    display: none;
-  }
-  .Horizontal-scroll-content {
-    overflow-x: auto;
-    display: flex;
-  }
-  .content-card-1,
-  .content-card-2,
-  .content-card-3,
-  .content-card-4 {
-    flex: 0 0 70%;
-  }
-  .Content-details {
-    padding-bottom: 20px;
-  }
-
-  .section-note {
-    display: none;
-  }
-  .title {
-    font-size: 20px;
-  }
-  .Horizontal-scroll-content-2 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    width: 100%;
-  }
-}
-
 .Content-details {
   margin-top: 12px;
 }
@@ -610,9 +533,13 @@ body {
   margin-bottom: 64px;
 }
 
-.Collection-introduction {
-  padding-bottom: 20px;
+.Collection-introduction-Main {
+  margin-bottom: 24px;
   padding: 0 24px;
+}
+
+.Collection-introduction {
+  margin-bottom: 24px;
 }
 
 .Section-heading {
@@ -755,11 +682,13 @@ h3 {
 .sub-title {
   color: #f28d77;
   font-size: 11px;
+  margin-top: 56px;
 }
 .mypage {
   color: #f3f1ed;
   font-size: 40px;
   font-weight: 700;
+  gap: 12px;
 }
 .description {
   color: #acaeb3;
@@ -768,7 +697,9 @@ h3 {
 .mainpage {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
+
 .mypage-profile {
   border: 1px solid #1a1c1f;
   display: flex;
@@ -842,6 +773,21 @@ h3 {
   font-size: 11px;
   color: #7e8289;
 }
+.calendar-2 {
+  display: none;
+}
+
+.mypage-bigmore {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.mypage-big-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .mypage-img {
   width: 88px;
   height: 88px;
@@ -892,8 +838,9 @@ h3 {
 }
 .mypage-2 {
   width: 100%;
-  margin: 0 auto;
   max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px 24px;
 }
 .line {
   color: #303237;
@@ -977,7 +924,48 @@ h3 {
   padding-left: 64px;
   padding-right: 64px;
 }
-/* 기본: Desktop (1024px 이상) */
+
+.checkbox-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #101113;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  opacity: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  appearance: none;
+
+  border: 0.3px solid #1a1c1f;
+  background-color: #1a1c1f;
+  opacity: 0;
+}
+input + label {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  display: flex;
+}
 
 /* Tablet */
 @media (max-width: 1023px) {
@@ -988,7 +976,7 @@ h3 {
   .header {
     width: 100%;
     height: 120px;
-    padding: 16px 24px;
+    padding: 16px 16px;
     background-color: #101113;
 
     display: flex;
@@ -1043,6 +1031,9 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
   }
   .footer-nav {
     display: flex;
@@ -1072,7 +1063,6 @@ h3 {
     width: 100%;
     padding-top: 260px;
     padding-bottom: 36px;
-    padding-right: 24px;
     gap: 20px;
   }
   .title-ko {
@@ -1109,5 +1099,112 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
     width: 100%;
+  }
+  .description {
+    display: flex;
+    width: 320px;
+  }
+  .title-email {
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+  }
+  .title-password {
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+  }
+  .title-membership {
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+  }
+  .title-language {
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+  }
+  .b-label {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .b-password {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    margin: 0px;
+  }
+
+  .b-style {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+  .calendar {
+    display: none;
+  }
+  .calendar-2 {
+    display: inline;
+    font-size: 11px;
+    color: #7e8289;
+  }
+  .mypage-big-porfile {
+    display: flex;
+    gap: 20px;
+  }
+  .mypage-bigmore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .button-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .profile-b-more {
+    display: none;
+  }
+  .all-main {
+    padding: 0 16px;
+  }
+
+  .scene-title {
+    font-size: 28px;
+  }
+
+  .scene-subtitle {
+    font-size: 13px;
+  }
+  .pencil-box {
+    margin-top: 140px;
+  }
+  .end-end {
+    transform: translateY(-56px);
+  }
+
+  .profile-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    column-gap: 32px;
+    row-gap: 28px;
+    margin: 0 auto;
+    transform: translatey(-20%);
+    padding-top: 40px;
+  }
+  .scene {
+    padding-top: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .profile-box svg {
+    width: 136px;
+    height: 136px;
+  }
+
+  .note-book {
+    display: none;
   }
 }
