@@ -312,7 +312,7 @@ body {
       rgba(16, 17, 19, 0.66),
       rgba(16, 17, 19, 0)
     ),
-    url(../assets/Hero\ quiet-orbit.png);
+    url(../assets/hero\ quiet-orbit.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -1047,7 +1047,7 @@ input[type="checkbox"]:checked + label {
   .hero-banner {
     background-image:
       linear-gradient(to bottom, rgba(16, 17, 19, 0), rgba(16, 17, 19, 1)),
-      url(../assets/Hero\ quiet-orbit\ \(1\).jpg);
+      url(../assets/hero\ quiet-orbit\ \(1\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% top;
