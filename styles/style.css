@@ -257,7 +257,6 @@ body {
   max-width: 1440px;
   height: 166px;
   flex-shrink: 0;
-  background-color: #111214;
   border-top: 1px solid #333333;
   padding-top: 40px 24px;
 }
@@ -280,7 +279,7 @@ body {
 .footer-nav a {
   font-size: 12px;
   font-weight: 400;
-  color: #7e8289;
+  color: #acaeb3;
 }
 .footer-description {
   width: 100%;
